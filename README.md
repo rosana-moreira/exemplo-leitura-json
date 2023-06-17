@@ -1,10 +1,10 @@
 
 <h2 align="center">Doadores de Sangue</h2>
 
-<P>Implemente um sistema web que receba um JSON com os dados e mostre os seguintes resultados:
-• Quantos candidatos temos nessa lista em cada estado do Brasil.
-• Retorne todos os dados do json.
-</p>
+<P>Implemente um sistema web que receba um JSON com os dados e mostre os seguintes resultados:</p>
+<P>• Quantos candidatos temos nessa lista em cada estado do Brasil.</p>
+<P>• Retorne todos os dados do json.</p>
+
 
 
 <h3>Pré-requisitos: Java 11+ </h3>
