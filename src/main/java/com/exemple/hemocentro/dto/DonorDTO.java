@@ -8,7 +8,6 @@ import java.util.List;
 
 public class DonorDTO implements Serializable {
     private static final long serialVersionUID = 1L;
-    private Long id;
     private String nome;
     private String cpf;
     private String rg;
@@ -34,8 +33,7 @@ public class DonorDTO implements Serializable {
     public DonorDTO() {
     }
 
-    public DonorDTO(Long id, String nome, String cpf, String rg, String data_nasc, String sexo, String mae, String pai, String email, String cep, String endereco, int numero, String bairro, String cidade, String estado, String telefone_fixo, String celular, double altura, double peso, String tipo_sanguineo) {
-        this.id = id;
+    public DonorDTO( String nome, String cpf, String rg, String data_nasc, String sexo, String mae, String pai, String email, String cep, String endereco, int numero, String bairro, String cidade, String estado, String telefone_fixo, String celular, double altura, double peso, String tipo_sanguineo) {
         this.nome = nome;
         this.cpf = cpf;
         this.rg = rg;
@@ -63,14 +61,6 @@ public class DonorDTO implements Serializable {
 
     public void setRg(String rg) {
         this.rg = rg;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNome() {

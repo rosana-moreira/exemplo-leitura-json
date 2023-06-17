@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Donor implements Serializable {
     private static final long serialVersionUID = 1L;
-    private Long id;
     private String nome;
     private String cpf;
     private String rg;
@@ -30,8 +29,7 @@ public class Donor implements Serializable {
     public Donor() {
     }
 
-    public Donor(Long id, String nome, String cpf, String rg, String data_nasc, String sexo, String mae, String pai, String email, String cep, String endereco, int numero, String bairro, String cidade, String estado, String telefone_fixo, String celular, double altura, double peso, String tipo_sanguineo) {
-        this.id = id;
+    public Donor(String nome, String cpf, String rg, String data_nasc, String sexo, String mae, String pai, String email, String cep, String endereco, int numero, String bairro, String cidade, String estado, String telefone_fixo, String celular, double altura, double peso, String tipo_sanguineo) {
         this.nome = nome;
         this.cpf = cpf;
         this.rg = rg;
@@ -53,20 +51,12 @@ public class Donor implements Serializable {
         this.tipo_sanguineo = tipo_sanguineo;
     }
 
-    public Long getId() {
-        return id;
-    }
-
     public String getRg() {
         return rg;
     }
 
     public void setRg(String rg) {
         this.rg = rg;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNome() {
